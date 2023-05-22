@@ -1,0 +1,45 @@
+public class PhongMayTinh extends PhongHoc {
+		private int soMayTinh;
+		@SuppressWarnings("unused")
+		private String chuyenNganh;
+		@SuppressWarnings("unused")
+		private int sucChua;
+
+		public PhongMayTinh() {
+			super();
+			this.soMayTinh = 0;
+		}
+
+		public PhongMayTinh(String maPhong, String dayNha, float dienTich, int soBongDen, int soMayTinh) {
+			super(maPhong, dayNha, dienTich, soBongDen);
+			this.soMayTinh = soMayTinh;
+		}
+
+		public int getSoMayTinh() {
+			return soMayTinh;
+		}
+
+		public void setSoMayTinh(int soMayTinh) {
+			this.soMayTinh = soMayTinh;
+		}
+		public void setChuyenNganh1(String chuyenNganh) {
+			this.chuyenNganh = chuyenNganh;
+		}
+		public void setSucChua(int sucChua) {
+			this.sucChua = sucChua;
+		}
+
+		@Override
+		public String toString() {
+			return super.toString() + "Số máy tính: " + soMayTinh + "\n";
+		
+			
+		}
+
+		@Override
+		public void setChuyenNganh(String chuyenNganh) {
+			// TODO Auto-generated method stub
+			
+		}
+
+	}
