@@ -1,0 +1,47 @@
+public class PhongLyThuyet extends PhongHoc {
+		private boolean coMayChieu;
+		@SuppressWarnings("unused")
+		private int sucChua;
+		@SuppressWarnings("unused")
+		private String chuyenNganh;
+
+		public PhongLyThuyet() {
+			super();
+		}
+
+		public PhongLyThuyet(String maPhong, String dayNha, float dienTich, int soBongDen, boolean coMayChieu) {
+			super(maPhong, dayNha, dienTich, soBongDen);
+			this.coMayChieu = coMayChieu;
+		}
+
+		public PhongLyThuyet(String string, String string2, int i, int j, int k) {
+			// TODO Auto-generated consructor stub
+		}
+
+		public boolean isCoMayChieu() {
+			return coMayChieu;
+		}
+
+		public void setCoMayChieu(boolean coMayChieu) {
+			this.coMayChieu = coMayChieu;
+		}
+		public void setSucChua(int sucChua) {
+			this.sucChua = sucChua;
+		}
+		public void setChuyenNganh(String chuyenNganh) {
+			this.chuyenNganh = chuyenNganh;
+		}
+		
+
+		@Override
+		public String toString() {
+			return "Phòng lý thuyết - Mã phòng: " + getMaPhong() + ", Dãy nhà: " + getDayNha() + ", Diện tích: "
+					+ getDienTich()
+					+ ", Số bóng đèn: " + getSoBongDen() + ", Có máy chiếu: " + (coMayChieu ? "Có" : "Không");
+		}
+
+		
+
+			
+		}
+	
